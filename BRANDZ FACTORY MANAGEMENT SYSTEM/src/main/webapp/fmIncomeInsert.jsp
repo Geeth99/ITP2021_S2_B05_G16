@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="#" method="post">
+<form action="insert" method="post">
 	Buyer name<input type="text" name="Bname"><br>
 	Bank details<input type="text" name="Bank-details"><br>
 	Discount<input type="text" name="Disount"><br>
