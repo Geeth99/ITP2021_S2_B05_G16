@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="BRANDZ FACTORY MANAGEMENT SYSTEM">
-        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="BRANDZ_FACTORY_MANAGEMENT_SYSTEM"/>
         <property name="java-output-path" value="/BRANDZ FACTORY MANAGEMENT SYSTEM/build/classes"/>
     </wb-module>
