@@ -11,6 +11,7 @@ import java.util.List;
 
 public class fmfinanceDButil {
 	
+	private static boolean isSuccess =false;
 	private static Connection con=null;
 	private  static Statement stmt =null;
 	private static ResultSet rs=null;
@@ -19,7 +20,7 @@ public class fmfinanceDButil {
 public static boolean incomeinsert(String name,String Bdetails,String discount,
 			String Icode,String quantity,String price ) {
 		
-		boolean isSuccess=false;
+		
 		
 		//Create database connection
 		String url = "jdbc:mysql://localhost:3306/finance";
@@ -94,6 +95,36 @@ if(rs > 0) {
 		
 		return inc;
 		
+		
+	}
+	
+	public static boolean updatedetails(String id,String Bname,String BankDetails,String Disount,String icode,
+			String quan,String Price) {
+		
+	try{
+		con =fmDBconnect.getConnection();
+		stmt =con.createStatement();
+		
+		String sql="update income set bname='"+Bname+"',bankDetails='"+BankDetails+"',discount='"+Disount+"',icode='"+icode+"',"
+				+ "quantity='"+quan+"',proce='"+Price+"'"+ "Where transactionid ='"+id+"'";
+		int rs= stmt.executeUpdate(sql);
+		
+		
+		if(rs > 0) {
+			isSuccess =true;
+			
+		}else {
+			isSuccess =false;
+		}
+		
+		
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+		
+		
+		
+				return isSuccess;
 		
 	}
 

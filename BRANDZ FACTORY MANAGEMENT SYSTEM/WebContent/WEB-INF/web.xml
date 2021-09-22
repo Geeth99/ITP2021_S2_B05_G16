@@ -38,5 +38,20 @@
          
          </servlet-mapping>
          
+         <servlet>
+         
+         <servlet-name>updateDetails</servlet-name>
+         <servlet-class>fmcom.finance.fmupdateservlet</servlet-class>
+         
+         
+         </servlet>
+         <servlet-mapping>
+         
+         <servlet-name>updateDetails</servlet-name>
+         <url-pattern>/update</url-pattern>
+         
+         
+         </servlet-mapping>
+         
          
  </web-app>

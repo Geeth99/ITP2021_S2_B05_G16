@@ -19,8 +19,8 @@
 	
 	%>
 
-	<form action="#" method="post">
-		Transaction ID<input type="text" name="transid" value="<%=id %>"><br>
+	<form action="update" method="post">
+		Transaction ID<input type="text" name="transid" value="<%=id %>" readonly><br>
 		Buyer name<input type="text" name="Bname"value="<%=buyname %>"><br>
 		Bank details<input type="text" name="Bank-details"value="<%=BankDetails %>"><br>
 		Discount<input type="text" name="Disount"value="<%=Dis %>"><br>
